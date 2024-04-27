@@ -8,6 +8,8 @@ print(data.head())
 data.drop(['User ID'], inplace = True, axis = 1)
 data.drop(['Gender'], inplace = True, axis = 1) #dropping Gender as it has low correlation with target
 print(data)
+print(data['Age'].min(),data['Age'].max())
+print(data['EstimatedSalary'].min(),data['EstimatedSalary'].max())
 
 y = data['Purchased']
 X = data.drop(['Purchased'], axis = 1)

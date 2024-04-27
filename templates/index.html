@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Network Ads Prediction</title>
-    <!--link rel ="stylesheet" href="../static/style.css"-->
+    <link rel ="stylesheet" href="../static/style.css">
 </head>
 <body>
     <h1>Social Network Ads Prediction</h1>
     <form action="/predict" method = "post">
 
-        <label for ="age">Age</label>
-        <input type ="text" id = "age" name = "age"><br><br>
+        <label for ="age">Enter Age: </label>
+        <input type ="number" id = "age" name = "age" min = "18" max = "60"><br><br>
 
-        <label for ="estsal">EstimatedSalary</label>
-        <input type ="text" id = "estsal" name = "estsal"><br><br>
+        <label for ="estsal">Enter Estimated Salary: </label>
+        <input type ="number" id = "estsal" name = "estsal" min = "15000" max = "150000"><br><br>
 
-        <button type = "submit">Predict</button>
+        <button type = "submit">PREDICT</button>
         <h2>Purchase prediction:</h2>
         <h3>{{pred_result}}</h3>
 
