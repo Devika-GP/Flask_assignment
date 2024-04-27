@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Ads Prediction</title>
+    <!--link rel ="stylesheet" href="../static/style.css"-->
+</head>
+<body>
+    <h1>Social Network Ads Prediction</h1>
+    <form action="/predict" method = "post">
+
+        <label for ="age">Age</label>
+        <input type ="text" id = "age" name = "age"><br><br>
+
+        <label for ="estsal">EstimatedSalary</label>
+        <input type ="text" id = "estsal" name = "estsal"><br><br>
+
+        <button type = "submit">Predict</button>
+        <h2>Purchase prediction:</h2>
+        <h3>{{pred_result}}</h3>
+
+    </form>
+</body>
+</html>
